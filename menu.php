@@ -10,7 +10,6 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li><a href="/duyurular">Duyurular</a></li>
-
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kurslar <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
