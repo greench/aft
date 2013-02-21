@@ -21,7 +21,17 @@ $(document).ready(function(){
 								success:function(data, textStatus, jqXHR){
 									$("#galerikutu").html(data);
 									//$('#galerikutu a.zoom').fancyZoom({width:$(window).width()/100*60,scaleImg:true});
-									$("#galerikutu a.zoom").fancybox({padding:20,cyclic:true,overlayOpacity:0.4});
+									$("#galerikutu a.zoom").fancybox(
+										{
+											padding:20,
+											cyclic:true,
+											overlayOpacity:0.4,
+											helpers : {
+												title: {
+													type: 'outside'
+												}
+											}
+										});
 								}
 						})
 					}});

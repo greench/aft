@@ -57,7 +57,7 @@ switch($_GET["type"]){
       if(!count($dirs)) {print("Bir şey bulunamadı"); break;}
       foreach ($dirs["files"] as $dir){
          $part=explode(DIRECTORY_SEPARATOR,$dir);
-         print('<a id="#'.str_replace(".", "",$part[1].$part[2].$part[3]).'" rel="group1" href="http://aft.metu.edu.tr/'.str_replace(DIRECTORY_SEPARATOR,'/',$dir).'" style="background-image:url(http://aft.metu.edu.tr/galeri/'.$part[1].'/'.$part[2].'/sml/'.$part[3].')" class="zoom" id="'.$part[2].'"></a>');
+         print('<a id="#'.str_replace(".", "",$part[1].$part[2].$part[3]).'" rel="group1" href="http://aft.metu.edu.tr/'.str_replace(DIRECTORY_SEPARATOR,'/',$dir).'" caption="resim başlığı" style="background-image:url(http://aft.metu.edu.tr/galeri/'.$part[1].'/'.$part[2].'/sml/'.$part[3].')" class="zoom" id="'.$part[2].'"></a>');
       }
 
       break;
