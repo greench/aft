@@ -28,4 +28,14 @@ $(document).ready(function(){
 				}
 			})
 		});
+	/* İletişim Formu */
+	$("#iletisimform").submit(function(event){
+		$.ajax("postala.php",{
+			data:$(this).serialize(),
+			success:function(data){$("#yukleniyor").hide();alert(data);},
+			beforeSend:function(){$("#yukleniyor").show();}
+			
+		});
+		return false;
+	});
 });

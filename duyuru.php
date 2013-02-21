@@ -1,6 +1,6 @@
 <?php
 include "header.php";
 include "menu.php";
-include "duyurular.html";
+include "duyuru.html";
 include "footer.php";
 ?>

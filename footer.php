@@ -1,6 +1,6 @@
-
+<hr>
             <footer>
-                <p>ODTÜ Amatör Fotoğrafçılık Topluluğu 1984-2013<!-- TODO Yılı php ile yazdır --></p>
+                <p>ODTÜ Amatör Fotoğrafçılık Topluluğu 1984-<?php echo date("Y");?><!-- TODO Yılı php ile yazdır --></p>
             </footer>
 
         </div> <!-- /container -->

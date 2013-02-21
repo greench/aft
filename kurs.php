@@ -1,6 +1,6 @@
 <?php
 include "header.php";
 include "menu.php";
-include "kurslar.html";
+include "kurs.html";
 include "footer.php";
 ?>

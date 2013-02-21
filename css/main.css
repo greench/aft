@@ -10,10 +10,33 @@ body
   margin-top:40px;
 }
 
-#galeri .isimler a,#galeri .isimler a:link
-{
-  color:#333;
+#iletisimform input,#iletisimform textarea{
+  float:left;
+  clear:both
 }
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
 
 #loading
 {
@@ -67,14 +90,11 @@ body
 {
   float:left;
   margin:20px;
+  list-style-type:none; 
 }
 
 .galeriklasor li,.yaziklasor li
 {
-  -moz-transform:skew(6deg,5deg) rotate(3deg);
-  -ms-transform:skew(6deg,5deg) rotate(3deg);
-  -o-transform:skew(6deg,5deg) rotate(3deg);
-  -webkit-transform:skew(6deg,5deg) rotate(3deg);
   float:left;
   margin:3px;
   text-align:center;
@@ -82,78 +102,27 @@ body
 
 .galeriklasor a
 {
-  -moz-box-sizing:border-box;
-  -moz-transition:background-color 1s 0;
-  -ms-transition:background-color 1s 0;
-  -o-transition:background-color 1s 0;
-  -webkit-box-sizing:border-box;
-  -webkit-transition:background-color 1s 0;
-  background-color:rgba(0,0,0,0.7);
   border:1px solid #777;
   border-radius:3px;
-  box-shadow:0 0 3px #000;
+  box-shadow:0 0 1px #000;
   box-sizing:border-box;
   display:block;
   font-size:.8em;
   padding:50px 10px;
-  transition:background-color 1s 0;
   width:100px;
 }
 
-.galeriklasor a:hover,.yaziklasor a:hover
-{
-  background-color:rgba(0,0,0,1);
-}
-
-.yaziklasor a
-{
-  -moz-box-sizing:border-box;
-  -moz-transition:background-color 1s 0;
-  -ms-transition:background-color 1s 0;
-  -o-transition:background-color 1s 0;
-  -webkit-box-sizing:border-box;
-  -webkit-transition:background-color 1s 0;
-  background-color:rgba(0,0,0,0.7);
-  border:1px solid #777;
-  border-radius:3px;
-  box-shadow:0 0 3px #000;
-  box-sizing:border-box;
-  display:block;
-  font-size:.8em;
-  padding:10px;
-  transition:background-color 1s 0;
-  width:200px;
-}
-
-#galerikutu,#yazikutu
-{
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
-  height:100%;
-  overflow-x:hidden;
-  overflow-y:auto;
-  width:85%;
-}
-
-#yazikutu
-{
-  width:100%;
-}
 
 #galerikutu a.zoom
 {
   -moz-box-sizing:border-box;
-  -moz-transition:0 250ms 0;
-  -ms-transition:0 250ms 0;
-  -o-transition:0 250ms 0;
   -webkit-box-sizing:border-box;
-  -webkit-transition:0 250ms 0;
   background-position:50% 10%;
   background-repeat:no-repeat;
   background-size:cover;
-  border:1px solid #777;
-  border-radius:3px;
-  box-shadow:0 0 3px #000;
+  border:4px solid #fff;
+  border-bottom:12px solid #fff;
+  outline:1px solid #999;
   box-sizing:border-box;
   display:block;
   float:left;
@@ -161,19 +130,12 @@ body
   margin:3px;
   padding:50px 10px;
   position:relative;
-  transition:transform 250ms 0;
+  transition:transform 1s 0;
   width:100px;
+  z-index:90
 }
 
 #galerikutu a.zoom:hover
 {
-  -moz-transform:scale(1.15);
-  -ms-transform:scale(1.15);
-  -o-transform:scale(1.15);
-  -webkit-transform:scale(1.15);
-}
-
-
-@media screen and (max-width: 1024px){
-  /* Mobil site kodları */
+  z-index:1000
 }
