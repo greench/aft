@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=2.1.4" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.4" media="screen">
         <style>
             body {
                 padding-top: 60px;

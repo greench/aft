@@ -1,3 +1,33 @@
+(function ($, F) {
+    F.transitions.resizeIn = function() {
+        var previous = F.previous,
+            current  = F.current,
+            startPos = previous.wrap.stop(true).position(),
+            endPos   = $.extend({opacity : 1}, current.pos);
+
+        startPos.width  = previous.wrap.width();
+        startPos.height = previous.wrap.height();
+
+        previous.wrap.stop(true).trigger('onReset').remove();
+
+        delete endPos.position;
+
+        current.inner.hide();
+
+        current.wrap.css(startPos).animate(endPos, {
+            duration : current.nextSpeed,
+            easing   : current.nextEasing,
+            step     : F.transitions.step,
+            complete : function() {
+                F._afterZoomIn();
+
+                current.inner.fadeIn("fast");
+            }
+        });
+    };
+
+}(jQuery, jQuery.fancybox));
+
 $(document).ready(function(){
 	/* Galeri */
 		galeriisim='';
@@ -23,6 +53,8 @@ $(document).ready(function(){
 									//$('#galerikutu a.zoom').fancyZoom({width:$(window).width()/100*60,scaleImg:true});
 									$("#galerikutu a.zoom").fancybox(
 										{
+									        nextMethod : 'resizeIn',
+									        nextSpeed  : 100,
 											padding:20,
 											cyclic:true,
 											overlayOpacity:0.4,

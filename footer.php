@@ -1,6 +1,10 @@
 <hr>
             <footer>
-                <p>ODTÜ Amatör Fotoğrafçılık Topluluğu 1984-<?php echo date("Y");?><!-- TODO Yılı php ile yazdır --></p>
+                <p>ODTÜ Amatör Fotoğrafçılık Topluluğu 1984-<?php echo date("Y");?></p>
+				<?php $dosya = "duyuru.html"; // Son güncelleme tarihine bakılacak dosya ?>
+				<?php if(file_exists($dosya)) { // Dosyanın olup olmadığının kontrolü?>
+                <p>Son Güncelleme: <?php echo date("F d Y H:i:s.", filemtime($dosya)); // Dosyanın son düzenleme tarihini yazdır ?></p>
+                <?php } // Son güncelleme tarihi yazdırma alanı sonu?>
             </footer>
 
         </div> <!-- /container -->
