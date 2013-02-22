@@ -8,7 +8,9 @@
             </footer>
 
         </div> <!-- /container -->
-
+		<!-- Yükleniyor yazısı -->
+		<div id="yukleniyor"><div style="display:table-cell;vertical-align:middle">Biraz sabret</div></div>
+		
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
 

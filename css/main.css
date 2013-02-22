@@ -5,11 +5,6 @@ body
   font-family:Tahoma, sans-serif;
 }
 
-.row
-{
-  margin-top:40px;
-}
-
 #iletisimform input,#iletisimform textarea{
   float:left;
   clear:both
@@ -38,12 +33,15 @@ html[xmlns] .clearfix {
 }
 
 
-#loading
+#yukleniyor
 {
   background:rgba(0,0,0,0.6);
   bottom:0;
   display:table;
   font-size:2em;
+  text-shadow:0 0 5px  #fff;
+  letter-spacing:-1px;
+  font-weight:bold;
   height:100%;
   left:0;
   position:fixed;
@@ -54,6 +52,7 @@ html[xmlns] .clearfix {
   width:100%;
   z-index:999;
 }
+
 
 #galerikapsayici,#yazikapsayici
 {

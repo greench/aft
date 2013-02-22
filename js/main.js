@@ -1,3 +1,4 @@
+/* Fancybox fotoğraflar arası geçiş efekti */
 (function ($, F) {
     F.transitions.resizeIn = function() {
         var previous = F.previous,
@@ -27,14 +28,18 @@
     };
 
 }(jQuery, jQuery.fancybox));
+/* / Fancybox fotoğraflar arası geçiş efekti sonu */
 
 $(document).ready(function(){
+	/* Sayfa yüklendikten sonra yükleniyor yazısını gizle */
+	$("#yukleniyor").hide();
 	/* Galeri */
 		galeriisim='';
 		$('#galeri .isimler a').click(function(e){
 			jQuery.ajax('galeri.php',{
 				data:{
 					"id":$(e.target).attr("id"),
+					// Albümler için type değeri 1, bir albümdeki fotoğrafları gösterirken type değeri 2dir.
 					"type":1
 				},
 				success:function(data, textStatus, jqXHR){
@@ -74,8 +79,14 @@ $(document).ready(function(){
 	$("#iletisimform").submit(function(event){
 		$.ajax("postala.php",{
 			data:$(this).serialize(),
-			success:function(data){$("#yukleniyor").hide();alert(data);},
-			beforeSend:function(){$("#yukleniyor").show();}
+			success:function(data){
+				$("#yukleniyor").hide();
+				$('#myModal').modal('show');
+				this.reset()
+			},
+			beforeSend:function(){
+				$("#yukleniyor").show();
+			}
 			
 		});
 		return false;

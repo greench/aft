@@ -6,7 +6,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="/">Amatör Fotoğrafçılık Topluluğu</a>
+                    <a class="brand" href="/">AFT</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li><a href="/duyuru">Duyurular</a></li>
@@ -27,7 +27,7 @@
                                     <li><a href="/senlik#basvuru">Başvuru</a></li>
                                     <li><a href="/senlik#barinma">Barınma</a></li>
                                     <li><a href="/senlik#program">Program</a></li>
-                                    <li><a href="/senlik#katilim">Katılım<!-- TODO ismini değiştir --></a></li>
+                                    <li><a href="/senlik#katilim">Katılım</a></li>
                                 </ul>
                             </li>
                             <li><a href="/portfolyo">Portfolyo</a></li>
