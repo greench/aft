@@ -24,8 +24,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">ODTÜ Fotoğraf Şenliği <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                              <!--  <li><a href="senlik#basvuru">Başvuru</a></li> -->
-                              <!--  <li><a href="senlik#barinma">Barınma</a></li> -->
+                              	    <li><a href="senlik#basvuru">Başvuru</a></li>
+                              	    <li><a href="senlik#barinma">Barınma</a></li>
                                     <li><a href="senlik#program">Program</a></li>
                                     <li><a href="senlik#katilim">Yer ve Tarih</a></li>
                                 </ul>
