@@ -75,14 +75,27 @@ $(document).ready(function(){
 				}
 			})
 		});
+		
+	/* Şenlik Sekmeleri */
+	$('#senlik-gunleri a').click(function (e) {
+		e.preventDefault();
+  		$(this).tab('show');
+	});
+	
 	/* İletişim Formu */
 	$("#iletisimform").submit(function(event){
+		var form = $(this);
 		$.ajax("postala.php",{
-			data:$(this).serialize(),
+			data:form.serialize(),
 			success:function(data){
 				$("#yukleniyor").hide();
-				$('#myModal').modal('show');
-				this.reset()
+				if(data=="Gönderildi."){
+					$('#myModal').modal('show');
+					form[0].reset();
+				}else{
+					alert("İletiniz gönderilemedi!");
+				}
+				
 			},
 			beforeSend:function(){
 				$("#yukleniyor").show();
