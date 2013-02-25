@@ -18,9 +18,6 @@
 				  <li>
 					<a href="javascript:" id="sddt">Saadet</a>
 				  </li>
-				  <li>
-					<a href="javascript:" id="sddt">Berkman</a>
-				  </li>
 				</ul>
 				<div class="span9" id="galerikutu">
 				</div>
