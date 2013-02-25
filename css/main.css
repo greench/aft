@@ -2,6 +2,7 @@ body
 {
   background:#fff;
   color:#333;
+  font-family:'Oxygen', sans-serif;
 }
 
 #iletisimform input,#iletisimform textarea{
