@@ -13,10 +13,10 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kurslar <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="kurs#tarih-icerik">Tarihler &amp; İçerik</a></li>
-                                    <li><a href="kurs#katilim">Katılım</a></li>
+                                    <li><a href="kurs#tarih">Tarihler</a></li>
+                                    <li><a href="kurs#icerik">İçerik</a></li>
                                     <li class="divider"><li>
-                                    <li><a href="kurs#kurallar">Kurallar</a></li>
+                                    <li><a href="kurs#katilim">Katılım</a></li>
                                     <li><a href="kurs#sss">SSS</a></li>
                                 </ul>
                             </li>
