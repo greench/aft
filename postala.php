@@ -31,10 +31,10 @@ function spamcheck($field)
       "From: $email",
       "MIME-Version: 1.0",
       "Content-Type: text/html;charset=utf-8",
-      "Reply-To: $email;odtu.aft@gmail.com",
-      "CC:caglaryesilyurt@gmail.com;saadet.comlekcioglu@gmail.com;berkman.kantar@gmail.com;yilmazhasan111@gmail.com"
+      "Reply-To: $email;odtu.aft@gmail.com"
+//      "CC:caglaryesilyurt@gmail.com;saadet.comlekcioglu@gmail.com;berkman.kantar@gmail.com;yilmazhasan111@gmail.com"
     );
-     $mail_sent =mail("odtu.aft@gmail.com", "Konu: AFT sitesinden birisi sizinle iletişime geçti",
+     $mail_sent =mail("caglaryesilyurt@gmail.com", "Konu: AFT sitesinden birisi sizinle iletişime geçti",
      "İsim:".$isim."<br><br>".$message."<br><br>Bu e-posta AFT İletişim Formu doldurularak gönderilmiştir.", implode("\r\n", $headerFields));
      echo $mail_sent?"Gönderildi.":"Gönderilemedi";
      }
