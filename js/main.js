@@ -31,6 +31,9 @@
 /* / Fancybox fotoğraflar arası geçiş efekti sonu */
 
 $(document).ready(function(){
+	/* Mobile tarayıcılarda açılır menünün görünür kalması için gerekli */
+	$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
+	
 	/* Sayfa yüklendikten sonra yükleniyor yazısını gizle */
 	$("#yukleniyor").hide();
 	/* Galeri */
