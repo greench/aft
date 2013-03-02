@@ -10,26 +10,8 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li><a href="duyuru">Duyurular</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="kurslar">Kurslar <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="kurs#tarih">Tarihler</a></li>
-                                    <li><a href="kurs#icerik">İçerik</a></li>
-                                    <li class="divider"><li>
-                                    <li><a href="kurs#katilim">Katılım</a></li>
-                                    <li><a href="kurs#sss">SSS</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="senlik">ODTÜ Fotoğraf Şenliği <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                              	    <li><a href="senlik#basvuru">Başvuru</a></li>
-                              	    <li><a href="senlik#barinma">Barınma</a></li>
-                                    <li><a href="senlik#program">Program</a></li>
-                                    <li><a href="senlik#katilim">Yer ve Tarih</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="kurs">Kurslar</a></li>
+                            <li><a href="senlik">ODTÜ Fotoğraf Şenliği</a></li>
                             <li><a href="portfolyo">Portfolyo</a></li>
                             <li><a href="iletisim">İletişim</a></li>
                        <!-- <li><a href="arsiv">Arşiv</a></li>-->
