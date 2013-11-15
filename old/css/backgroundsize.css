@@ -1,0 +1,10 @@
+.genislik{
+-moz-background-size:cover;
+-webkit-background-size:cover;
+}
+#slayt1 .genislik{-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/1.jpg',sizingMethod='scale')";}
+#slayt2 .genislik{-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/2.jpg',sizingMethod='scale')";}
+#slayt3 .genislik{-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/3.jpg',sizingMethod='scale')";}
+#slayt4 .genislik{-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/4.jpg',sizingMethod='scale')";}
+#slayt5 .genislik{-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/5.jpg',sizingMethod='scale')";}
+#slayt6 .genislik{-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/6.jpg',sizingMethod='scale')";}
